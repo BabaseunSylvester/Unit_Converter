@@ -1,4 +1,4 @@
-package com.example.unitconverter.ui
+package com.example.unitconverter.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
@@ -20,7 +19,6 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MenuAnchorType
 import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.SegmentedButton
 import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
@@ -34,16 +32,15 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.ImeAction
-import androidx.compose.ui.text.input.ImeOptions
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.input.PlatformImeOptions
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.unitconverter.data.Unit
-import com.example.unitconverter.data.areaUnits
-import com.example.unitconverter.data.lengthUnits
-import com.example.unitconverter.data.massUnits
-import com.example.unitconverter.data.volumeUnits
+import com.example.unitconverter.data.unit_converter.Unit
+import com.example.unitconverter.data.unit_converter.areaUnits
+import com.example.unitconverter.data.unit_converter.lengthUnits
+import com.example.unitconverter.data.unit_converter.massUnits
+import com.example.unitconverter.data.unit_converter.volumeUnits
+import com.example.unitconverter.ui.view_models.ConversionViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

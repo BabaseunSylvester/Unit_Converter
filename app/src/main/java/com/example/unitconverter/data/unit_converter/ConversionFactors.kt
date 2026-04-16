@@ -1,4 +1,4 @@
-package com.example.unitconverter.data
+package com.example.unitconverter.data.unit_converter
 
 // Mass factors
 const val tonsGramsCF = 1000000.00

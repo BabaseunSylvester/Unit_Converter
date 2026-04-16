@@ -1,4 +1,4 @@
-package com.example.unitconverter.data
+package com.example.unitconverter.data.unit_converter
 
 data class Unit(
     val name: String,

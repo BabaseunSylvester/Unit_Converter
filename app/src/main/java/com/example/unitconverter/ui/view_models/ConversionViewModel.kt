@@ -1,9 +1,44 @@
-package com.example.unitconverter.ui
+package com.example.unitconverter.ui.view_models
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import com.example.unitconverter.data.Unit as ConversionUnit
-import com.example.unitconverter.data.*
+import com.example.unitconverter.data.unit_converter.Unit as ConversionUnit
+import com.example.unitconverter.data.unit_converter.UKGallonsCubicMetresCF
+import com.example.unitconverter.data.unit_converter.UKTonsGramsCF
+import com.example.unitconverter.data.unit_converter.USGallonsCubicMetresCF
+import com.example.unitconverter.data.unit_converter.USTonsGramsCF
+import com.example.unitconverter.data.unit_converter.acresSquareMetresCF
+import com.example.unitconverter.data.unit_converter.areaUnits
+import com.example.unitconverter.data.unit_converter.aresSquareMetresCF
+import com.example.unitconverter.data.unit_converter.centimetresMetresCF
+import com.example.unitconverter.data.unit_converter.cubicCentimetresCubicMetresCF
+import com.example.unitconverter.data.unit_converter.cubicFeetCubicMetresCF
+import com.example.unitconverter.data.unit_converter.cubicInchesCubicMetresCF
+import com.example.unitconverter.data.unit_converter.cubicMetresCubicMetresCF
+import com.example.unitconverter.data.unit_converter.feetMetresCF
+import com.example.unitconverter.data.unit_converter.gramsGramsCF
+import com.example.unitconverter.data.unit_converter.hectaresSquareMetresCF
+import com.example.unitconverter.data.unit_converter.inchesMetresCF
+import com.example.unitconverter.data.unit_converter.kilogramsGramsCF
+import com.example.unitconverter.data.unit_converter.kilometresMetresCF
+import com.example.unitconverter.data.unit_converter.lengthUnits
+import com.example.unitconverter.data.unit_converter.litresCubicMetresCF
+import com.example.unitconverter.data.unit_converter.massUnits
+import com.example.unitconverter.data.unit_converter.metresMetresCF
+import com.example.unitconverter.data.unit_converter.milesMetresCF
+import com.example.unitconverter.data.unit_converter.millilitresCubicMetresCF
+import com.example.unitconverter.data.unit_converter.millimetresMetresCF
+import com.example.unitconverter.data.unit_converter.milsMetresCF
+import com.example.unitconverter.data.unit_converter.nauticalMilesMetresCF
+import com.example.unitconverter.data.unit_converter.ouncesGramsCF
+import com.example.unitconverter.data.unit_converter.poundsGramsCF
+import com.example.unitconverter.data.unit_converter.squareCentimetresSquareMetresCF
+import com.example.unitconverter.data.unit_converter.squareFeetSquareMetresCF
+import com.example.unitconverter.data.unit_converter.squareInchesSquareMetresCF
+import com.example.unitconverter.data.unit_converter.squareMetresSquareMetresCF
+import com.example.unitconverter.data.unit_converter.tonsGramsCF
+import com.example.unitconverter.data.unit_converter.volumeUnits
+import com.example.unitconverter.data.unit_converter.yardsMetresCF
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -213,7 +248,7 @@ class ConversionViewModel(private val savedStateHandle: SavedStateHandle) : View
             "Cubic Centimetres" -> 1.0 / cubicCentimetresCubicMetresCF
             "Cubic Metres" -> 1.0 / cubicMetresCubicMetresCF
             "Cubic Inches" -> 1.0 / cubicInchesCubicMetresCF
-            "Cubic Feet" -> 1.0/cubicFeetCubicMetresCF
+            "Cubic Feet" -> 1.0/ cubicFeetCubicMetresCF
             else -> 1.0
         }
         return cubicMetres * toTargetFactor
