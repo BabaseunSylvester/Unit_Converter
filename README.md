@@ -23,4 +23,4 @@ https://github.com/BabaseunSylvester/Unit_Converter/tree/master
 
 OR
 
-Download 
+Download this project from the master branch, open Android Studio, import the downloaded file as a new project.
