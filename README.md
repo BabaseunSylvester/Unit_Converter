@@ -2,8 +2,10 @@
 # Project Title
 
 This is a utility app containing two modules: unit converter and task manager.
+
 The Unit converter module let's you convert units of different physical quantities from one to another.
-The Task manager module let's you create taks; edit, delete, and toggle them done.
+
+The Task manager module let's you create tasks; edit, delete, and toggle them done.
 
 ## Authors
 
@@ -13,7 +15,9 @@ The Task manager module let's you create taks; edit, delete, and toggle them don
 ## Demo
 
 Demo all versions of this app by following the respective links below: Click on the link and press play.
+
 First version: https://appetize.io/app/b_i4ve5mmyf7vpmq37fcsuwfn62u
+
 Updated Version: https://appetize.io/app/b_attmgymnyb6rxhaozfyl3jigom
 
 
